@@ -1,24 +1,80 @@
 [
   {
-    "poolName": "50BTC",
-    "url": "https://50btc.com/",
+    "poolName": "Mining4people",
+    "url": "https://mining4people.com/#butkoin-sha256d-pplns/",
     "searchStrings": [
-      "50BTC.com",
-      "50btc.com"
+      "Mining4people",
+      "Mining4people"
     ]
   },
   {
-    "poolName": "175btc",
-    "url": "http://www.175btc.com/",
+    "poolName": "zpool",
+    "url": "https://zpool.ca/",
     "searchStrings": [
-      "Mined By 175btc.com"
+      "Mined By zpool.ca"
     ]
   },
   {
-    "poolName": "ASICminer",
-    "url": "https://bitcointalk.org/index.php?topic=99497.0",
+    "poolName": "coins4u",
+    "url": "https://coins4u.cc/",
     "searchStrings": [
-      "Mined By ASICMiner"
+      "Mined By coins4u.cc"
+    ]
+  },
+  {
+    "poolName": "miner123",
+    "url": "https://miner123.win/",
+    "searchStrings": [
+      "Mined By miner123.win"
+    ]
+  },
+  {
+    "poolName": "pool.mecrypto.club",
+    "url": "https://pool.mecrypto.club/poolstatus?coin=BUTK-gr/",
+    "searchStrings": [
+      "Mined By pool.mecrypto.club"
+    ]
+  },
+  {
+    "poolName": "zergpool",
+    "url": "https://zergpool.com/",
+    "searchStrings": [
+      "Mined By zergpool"
+    ]
+  },
+  {
+    "poolName": "cryptoverse",
+    "url": "https://pool.cryptoverse.eu/",
+    "searchStrings": [
+      "Mined By cryptoverse"
+    ]
+  },
+  {
+    "poolName": "weikeji",
+    "url": "http://but.weikeji.icu/",
+    "searchStrings": [
+      "Mined By weikeji"
+    ]
+  },
+  {
+    "poolName": "suprnova",
+    "url": "https://butk-gr.suprnova.cc/",
+    "searchStrings": [
+      "Mined By suprnova"
+    ]
+  },
+  {
+    "poolName": "migpool",
+    "url": "https://pool.migpool.com/",
+    "searchStrings": [
+      "Mined By migpool"
+    ]
+  },
+  {
+    "poolName": "hopto.org",
+    "url": "https://coolminerz.hopto.org/",
+    "searchStrings": [
+      "Mined By hopto.org"
     ]
   }
 ]
