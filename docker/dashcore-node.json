@@ -2,12 +2,12 @@
   "network": "livenet",
   "port": 3001,
   "services": [
-    "dashd",
+    "butd",
     "web",
     "@dashevo/insight-api"
   ],
   "servicesConfig": {
-    "dashd": {
+    "butd": {
       "connect": [{
         "rpchost": "127.0.0.1",
         "rpcport": 9998,

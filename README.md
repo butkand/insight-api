@@ -38,7 +38,7 @@ This is a backend-only service. If you're looking for the web frontend applicati
     - [Proposal Deserialization](#proposal-deserialization)
     - [Proposal Current Votes](#proposal-current-votes)
     - [Governance Budget](#governance-budget)
-    - [Masternodes List](#masternodes-list)
+    - [Smartnodes List](#smartnodes-list)
     - [Historic Blockchain Data Sync Status](#historic-blockchain-data-sync-status)
     - [Live Network P2P Data Sync Status](#live-network-p2p-data-sync-status)
     - [Status of the Bitcoin Network](#status-of-the-bitcoin-network)
@@ -441,9 +441,9 @@ Sample output:
     "SPORK_2_INSTANTSEND_ENABLED":0,
     "SPORK_3_INSTANTSEND_BLOCK_FILTERING":0,
     "SPORK_5_INSTANTSEND_MAX_VALUE":2000,
-    "SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT":0,
+    "SPORK_8_SMARTNODE_PAYMENT_ENFORCEMENT":0,
     "SPORK_9_SUPERBLOCKS_ENABLED":0,
-    "SPORK_10_MASTERNODE_PAY_UPDATED_NODES":0,
+    "SPORK_10_SMARTNODE_PAY_UPDATED_NODES":0,
     "SPORK_12_RECONSIDER_BLOCKS":0,
     "SPORK_13_OLD_SUPERBLOCK_FLAG":4070908800,
     "SPORK_14_REQUIRE_SENTINEL_FLAG":4070908800
@@ -465,7 +465,7 @@ Sample output:
 {
   "result":{
     "governanceminquorum":1,
-    "masternodewatchdogmaxseconds":7200,
+    "smartnodewatchdogmaxseconds":7200,
     "proposalfee":5,
     "superblockcycle":24,
     "lastsuperblock":79800,
@@ -702,16 +702,16 @@ Sample output:
 }
 ```
 
-### Masternodes List
+### Smartnodes List
 
 ```
-  deprecated until full support for v0.13 deterministic masternode list
+  deprecated until full support for v0.13 deterministic smartnode list
 ```
 
-### Validate Masternode
+### Validate Smartnode
 
 ```
-  deprecated until full support for v0.13 deterministic masternode list
+  deprecated until full support for v0.13 deterministic smartnode list
 ```
 
 ### Historic Blockchain Data Sync Status
@@ -884,8 +884,8 @@ There are a few changes to the `GET` endpoint for `/addr/[:address]`:
 
 Some additional general notes:
 - The transaction history for an address will be sorted in block order
-- The response for the `/sync` endpoint does not include `startTs` and `endTs` as the sync is no longer relevant as indexes are built in dashd.
-- The endpoint for `/peer` is no longer relevant connection to dashd is via ZMQ.
+- The response for the `/sync` endpoint does not include `startTs` and `endTs` as the sync is no longer relevant as indexes are built in butd.
+- The endpoint for `/peer` is no longer relevant connection to butd is via ZMQ.
 - `/tx` endpoint results will now include block height, and spentTx related fields will be set to `null` if unspent.
 - `/block` endpoint results does not include `confirmations` and will include `poolInfo`.
 
@@ -904,7 +904,7 @@ The `/tx/<txid>` endpoint JSON response will not include the following fields on
 object.
 - `spentTs`
 
-The `/status?q=getTxOutSetInfo` method has also been removed due to the query being very slow and locking dashd.
+The `/status?q=getTxOutSetInfo` method has also been removed due to the query being very slow and locking butd.
 
 Plug-in support for Insight API is also no longer available, as well as the endpoints:
 - `/email/retrieve`

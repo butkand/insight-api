@@ -14,8 +14,8 @@ describe('Currency', function() {
       consensus_protocolversion: 70103,
       all_user: 687,
       active_user: 372,
-      registered_masternodes: 1583,
-      registered_masternodes_verified: 770
+      registered_smartnodes: 1583,
+      registered_smartnodes_verified: 770
     },
     exchange_rates: {
       dash_usd: 9.4858840414,
